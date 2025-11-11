@@ -121,6 +121,4 @@ This project is open source and available for educational purposes.
 
 Feel free to fork this project and submit pull requests!
 
-## 📧 Contact
-
 For questions or suggestions, please open an issue in the repository.

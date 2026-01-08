@@ -246,18 +246,6 @@ class _CalculatorHomeState extends State<CalculatorHome> {
     );
   }
 
-  Widget _emptySlot() {
-    return const Expanded(
-      child: AspectRatio(
-        aspectRatio: 1,
-        child: Padding(
-          padding: EdgeInsets.all(8),
-          child: SizedBox.shrink(),
-        ),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -390,12 +378,14 @@ class _CalculatorHomeState extends State<CalculatorHome> {
                     ),
                     Row(
                       children: [
-                        _emptySlot(),
                         _button(
                           text: '0',
                           backgroundColor: AppColors.buttonNumber,
                           textColor: AppColors.textWhite,
                           onPressed: () => onDigitPress('0'),
+                          flex: 2,
+                          aspectRatio: 2,
+                          isWide: true,
                         ),
                         _button(
                           text: '.',
